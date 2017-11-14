@@ -1,0 +1,44 @@
+<grid forcePagerRow='true' enableFilters='true' enableMultiColumnSort='true' builtInActions='sort,separator'
+       styleName='FlexiciousGridStyle'
+      preferencePersistenceKey='externalFilter'
+      enableSelectionCascade='true' enableSelectionBubble='true' enableTriStateCheckbox='true'
+      showSpinnerOnFilterPageSort='true' enableDefaultDisclosureIcon='false'>
+    <level childrenField='items' enableFilters='false'>
+        <columns>
+            <column sortable='false' excludeFromSettings='true' enableExpandCollapseIcon='true' width='150' paddingLeft='34'
+                    columnWidthMode='fixed' headerText='Employee Name' dataField='employeeName' filterControl='TextInput'
+                    filterOperation='BeginsWith'/>
+            <column headerText='Title' dataField='title' filterControl='TextInput' filterOperation='BeginsWith'/>
+            <column headerText='Email Address' dataField='emailAddress' filterControl='TextInput'
+                    filterOperation='BeginsWith'/>
+            <column headerText='Department' dataField='department' filterControl='TextInput'
+                    filterOperation='BeginsWith'/>
+            <column headerText='Hire Date' dataField='hireDate' filterControl='TextInput' filterOperation='BeginsWith'/>
+        </columns>
+        <nextLevel>
+            <level reusePreviousLevelColumns='false' childrenField='items' headerVerticalGridLineThickness='1'>
+                <columns>
+                    <column sortable='false' excludeFromSettings='true' enableExpandCollapseIcon='true'
+                            olumnWidthMode='fixed' expandCollapseIconLeft='10'
+                            width='150' paddingLeft='44' dataField='project'
+                            headerText='Project'/>
+                    <column dataField='roleOnProject' headerText='Role On Project'/>
+                    <column dataField='projectStartDate' headerText='Project Start'/>
+                    <column dataField='projectEndDate' headerText='Project End'/>
+                </columns>
+                <nextLevel>
+                    <level reusePreviousLevelColumns='false' childrenField='items' headerVerticalGridLineThickness='1'>
+                        <columns>
+                            <column sortable='false'  excludeFromSettings='true' width='150'
+                                    paddingLeft='54'
+                                    dataField='timeSheetTitle' headerText='TimeSheet Title'/>
+                            <column dataField='hours' headerText='Hours'/>
+                            <column dataField='rate' headerText='Rate'/>
+                            <column dataField='totalExpense' headerText='Total Expense'/>
+                        </columns>
+                    </level>
+                </nextLevel>
+            </level>
+        </nextLevel>
+    </level>
+</grid>

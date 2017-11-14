@@ -1,0 +1,26 @@
+<grid enablePrint="true" enableDrillDown="true" enableEagerDraw="true" showSpinnerOnCreationComplete="true"
+      enablePreferencePersistence="true"
+      enableExport="true" enableCopy="true"
+      preferencePersistenceKey="levelRenderers2" creationComplete="levelRenderers2_creationCompleteHandler">
+    <level enableFilters="true" enablePaging="true" rendererHorizontalGridLines="true"
+           rendererVerticalGridLines="true" pageSize="20" childrenField="deals" enableFooters="true" selectedKeyField="id"
+           nextLevelRenderer="executeMethodOnDelegate__levelRenderers_getNextLevelRenderer"
+           levelRendererHeight="200">
+        <columns>
+            <column type="checkbox"/>
+            <column enableCellClickRowSelect="false" columnWidthMode="fitToContent" selectable="true" dataField="id"
+                    headerText="ID" filterControl="TextInput"/>
+            <column truncateToFit="true" enableCellClickRowSelect="false" columnWidthMode="fitToContent" selectable="true"
+                    dataField="legalName" headerText="Legal Name"/>
+            <column dataField="headquarterAddress.line1" headerText="Address Line 1" footerLabel="Count:"
+                    footerOperation="count"/>
+            <column dataField="headquarterAddress.line2" headerText="Address Line 2"/>
+            <column dataField="headquarterAddress.city.name" headerText="City" filterControl="MultiSelectComboBox"
+                    filterComboBoxBuildFromGrid="true" filterComboBoxWidth="150"/>
+            <column dataField="headquarterAddress.state.name" headerText="State" filterControl="MultiSelectComboBox"
+                    filterComboBoxBuildFromGrid="true" filterComboBoxWidth="150"/>
+            <column dataField="headquarterAddress.country.name" headerText="Country" filterControl="MultiSelectComboBox"
+                    filterComboBoxBuildFromGrid="true" filterComboBoxWidth="150"/>
+        </columns>
+    </level>
+</grid>

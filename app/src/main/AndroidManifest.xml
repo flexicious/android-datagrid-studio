@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.flexicious.androidcomponentstest" >
+
+    <uses-permission android:name="android.permission.INTERNET"></uses-permission>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"></uses-permission>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.flexicious.androidcomponentstest.MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".sampleviews.AutoResizingGrid" android:windowSoftInputMode="stateHidden"  ></activity>
+        <activity android:name=".sampleviews.ChangeTrackingAPI" android:windowSoftInputMode="stateHidden" ></activity>
+        <activity android:name=".sampleviews.ColumnLockModes" android:windowSoftInputMode="stateHidden" ></activity>
+        <activity android:name=".sampleviews.ColumnWidthMode" android:windowSoftInputMode="stateHidden" ></activity>
+        <activity android:name=".sampleviews.CustomFooter" android:windowSoftInputMode="stateHidden" ></activity>
+        <activity android:name=".sampleviews.CustomItemRenderers" android:windowSoftInputMode="stateHidden" ></activity>
+        <activity android:name=".sampleviews.CustomLoadingSpinner" android:windowSoftInputMode="stateHidden" ></activity>
+        <activity android:name=".sampleviews.CustomMatchFilterControl" android:windowSoftInputMode="stateHidden" ></activity>
+        <activity android:name=".sampleviews.DisclosureIcon_GroupedUI" android:windowSoftInputMode="stateHidden" ></activity>
+        <activity android:name=".sampleviews.DisclosureIcon_NestedUI" android:windowSoftInputMode="stateHidden" ></activity>
+        <activity android:name=".sampleviews.DynamicColumns" android:windowSoftInputMode="stateHidden" ></activity>
+        <activity android:name=".sampleviews.DynamicGrouping" android:windowSoftInputMode="stateHidden" ></activity>
+        <activity android:name=".sampleviews.DynamicLevels" android:windowSoftInputMode="stateHidden" ></activity>
+        <activity android:name=".sampleviews.EditableCells" android:windowSoftInputMode="adjustPan"></activity>
+
+        <activity android:name=".sampleviews.ErrorHandling" android:windowSoftInputMode="stateHidden" ></activity>
+        <activity android:name=".sampleviews.ExternalFilter" android:windowSoftInputMode="stateHidden" ></activity>
+        <activity android:name=".sampleviews.Filtercomboboxdataprovider" android:windowSoftInputMode="stateHidden" ></activity>
+        <activity android:name=".sampleviews.FullRowEdit" android:windowSoftInputMode="stateHidden" ></activity>
+        <activity android:name=".sampleviews.FullycustomizedGridPainting" android:windowSoftInputMode="stateHidden" ></activity>
+        <activity android:name=".sampleviews.GroupedDataOutlookStyle" android:windowSoftInputMode="stateHidden" ></activity>
+        <activity android:name=".sampleviews.GroupedData" android:windowSoftInputMode="stateHidden" ></activity>
+        <activity android:name=".sampleviews.GroupedData_2" android:windowSoftInputMode="stateHidden" ></activity>
+        <activity android:name=".sampleviews.IconColumns" android:windowSoftInputMode="stateHidden" ></activity>
+        <activity android:name=".sampleviews.LargeDataset" android:windowSoftInputMode="stateHidden" ></activity>
+        <activity android:name=".sampleviews.LargeDynamicGrid" android:windowSoftInputMode="stateHidden" ></activity>
+        <activity android:name=".sampleviews.LevelItemRenderers" android:windowSoftInputMode="stateHidden" ></activity>
+        <activity android:name=".sampleviews.LevelItemRenderers_2" android:windowSoftInputMode="stateHidden" ></activity>
+        <activity android:name=".sampleviews.Localization" android:windowSoftInputMode="stateHidden" ></activity>
+        <activity android:name=".sampleviews.MultipleGroupingManual" android:windowSoftInputMode="stateHidden" ></activity>
+        <activity android:name=".sampleviews.MultiselectComboBox" android:windowSoftInputMode="stateHidden" ></activity>
+        <activity android:name=".sampleviews.MultiSelectSetFilterValue" android:windowSoftInputMode="stateHidden" ></activity>
+        <activity android:name=".sampleviews.Nested" android:windowSoftInputMode="stateHidden" ></activity>
+        <activity android:name=".sampleviews.NestedDataFullyLazyLoaded" android:windowSoftInputMode="stateHidden" ></activity>
+        <activity android:name=".sampleviews.NestedDataPartialLazyLoaded" android:windowSoftInputMode="stateHidden" ></activity>
+        <activity android:name=".sampleviews.NestedUI" android:windowSoftInputMode="stateHidden" ></activity>
+        <activity android:name=".sampleviews.OnlyOneItemOpen" android:windowSoftInputMode="stateHidden" ></activity>
+        <activity android:name=".sampleviews.ProgramaticCellFormatting" android:windowSoftInputMode="stateHidden" ></activity>
+        <activity android:name=".sampleviews.RowSpanandColSpan" android:windowSoftInputMode="stateHidden" ></activity>
+        <activity android:name=".sampleviews.SelectionMode" android:windowSoftInputMode="stateHidden" ></activity>
+        <activity android:name=".sampleviews.SelectionOptions" android:windowSoftInputMode="stateHidden" ></activity>
+        <activity android:name=".sampleviews.Simple" android:windowSoftInputMode="stateHidden" ></activity>
+        <activity android:name=".sampleviews.SortNumeric" android:windowSoftInputMode="stateHidden" ></activity>
+        <activity android:name=".sampleviews.TraderView" android:windowSoftInputMode="stateHidden" ></activity>
+        <activity android:name=".sampleviews.VariableHeaderRowHeight" android:windowSoftInputMode="stateHidden" ></activity>
+        <activity android:name=".sampleviews.VariableRowHeight" android:windowSoftInputMode="stateHidden" ></activity>
+        <activity android:name=".sampleviews.XmlData" android:windowSoftInputMode="stateHidden" ></activity>
+
+
+
+        <activity
+            android:name="com.flexicious.screens.ExportActivity"
+            android:windowSoftInputMode="stateHidden"
+            android:theme="@android:style/Theme.Dialog">
+        </activity>
+        <activity
+            android:name="com.flexicious.screens.SaveSettingsActivity"
+            android:windowSoftInputMode="stateHidden"
+            android:theme="@android:style/Theme.Dialog">
+        </activity>
+        <activity
+            android:name="com.flexicious.screens.SettingsActivity"
+            android:windowSoftInputMode="stateHidden"
+            android:theme="@android:style/Theme.Dialog">
+        </activity>
+        <activity
+            android:name="com.flexicious.screens.SortActivity"
+            android:windowSoftInputMode="stateHidden"
+            android:theme="@android:style/Theme.Dialog">
+        </activity>
+
+        <activity
+            android:name="com.flexicious.screens.DatePickerActivity"
+            android:theme="@android:style/Theme.Dialog"
+            android:windowSoftInputMode="stateHidden" >
+        </activity>
+    </application>
+
+</manifest>

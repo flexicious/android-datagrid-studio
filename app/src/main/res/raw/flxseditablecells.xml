@@ -1,0 +1,44 @@
+<grid enableDrag="true" editable="true" enableFilters="true"
+      enableFooters="true" 
+      enableDoubleClickEdit="false"
+
+       preferencePersistenceKey="editableCells">
+    <columns>
+        <column type="checkbox"/>
+        <column dataField="id" headerText="ID" filterControl="TextInput"
+                editable="true" selectable="true" truncateToFit="true"/>
+        <column dataField="legalName" headerText="Legal Name" truncateToFit="true" selectable="true"
+                editable="true"/>
+        <column dataField="headquarterAddress.line1" headerText="Address Line 1" footerLabel="Count:"
+                footerOperation="count" editable="true"/>
+        <column dataField="headquarterAddress.line2" headerText="Address Line 2"/>
+        <column dataField="headquarterAddress.city.name" headerText="City" filterControl="MultiSelectComboBox"
+                filterComboBoxBuildFromGrid="true" filterComboBoxWidth="150" editable="true"/>
+        <column dataField="headquarterAddress.state.name" headerText="State"
+                filterControl="MultiSelectComboBox" filterComboBoxBuildFromGrid="true"
+                filterComboBoxWidth="150" editable="true"
+
+                >
+        </column>
+        <column dataField="headquarterAddress.country.name" headerText="Country" filterControl="MultiSelectComboBox"
+                filterComboBoxBuildFromGrid="true"
+                filterComboBoxWidth="150" editable="false"/>
+        <column dataField="addedDate" headerText="Added Date"
+                format="date"
+                editable="true" />
+        <column dataField="annualRevenue" headerText="Annual Revenue" textAlign="right" headerAlign="center"
+                footerLabel="Avg:" footerOperation="average" footerAlign="center" footerOperationPrecision="2"
+                footerFormatter="getCurrencyFormatter"
+                labelFunction="dataGridFormatCurrencyLabelFunction" editable="true"/>
+        <column dataField="numEmployees" headerText="Num Employees" textAlign="right" footerLabel="Avg:"
+                footerOperation="average" footerOperationPrecision="2" footerFormatter="getCurrencyFormatter"
+                labelFunction="dataGridFormatCurrencyLabelFunction" editable="true"/>
+        <column dataField="earningsPerShare" headerText="EPS" textAlign="right"
+                footerLabel="Avg:" footerOperation="average" footerFormatter="getCurrencyFormatter"
+                labelFunction="dataGridFormatCurrencyLabelFunction" editable="true"/>
+        <column dataField="lastStockPrice" headerText="Stock Price"
+                textAlign="right" footerLabel="Avg:" footerOperation="average"
+                footerOperationPrecision="2" footerFormatter="getCurrencyFormatter"
+                labelFunction="dataGridFormatCurrencyLabelFunction" editable="true"/>
+    </columns>
+</grid>

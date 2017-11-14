@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <com.flexicious.controls.TriStateCheckBox
+        android:id="@+id/triStateCheckBox1"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="34dp"
+        android:src="@drawable/flxs_grey_checked_checkbox" />
+
+    <com.flexicious.controls.ComboBox
+        android:id="@+id/comboBox1"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="14dp" />
+
+    <com.flexicious.controls.MultiSpinner
+        android:id="@+id/multiSpinner1"
+        android:layout_width="match_parent"
+        android:layout_height="50dp" />
+
+    <com.flexicious.controls.DateComboBox
+        android:id="@+id/dateComboBox1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>

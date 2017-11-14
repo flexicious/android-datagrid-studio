@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">AndroidComponentsTestStudio</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+
+    <string-array name="traderview_spinnervalue">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
+        <item>13</item>
+        <item>14</item>
+        <item>15</item>
+        <item>16</item>
+        <item>17</item>
+        <item>18</item>
+        <item>19</item>
+        <item>20</item>
+    </string-array>
+    <string name="singlecell">Single Cell</string>
+    <string name="multiplecell">Multiple Cells</string>
+    <string name="singlerow">Single Row</string>
+    <string name="multiplerow">Mutiple Rows</string>
+    <string name="none">None</string>
+    <string name="userowspan">Use Row Span</string>
+    <string name="usecolspan">Use Column Span</string>
+    <string name="addlaststockprice">Add Last Stock Price Column</string>
+    <string name="removelaststockprice">Remove Last Stock Price Column</string>
+    <string name="selectbj_ts">Select BJ, TS Programatically</string>
+    <string name="groupby">Group By</string>
+    <string name="timesheet1">Time Sheet-1</string>
+    <string name="timesheet2">Time Sheet-2</string>
+    <string name="search">Search</string>
+    <string name="start">Start</string>
+    <string name="traderviewnoofupdate">(Number of Updates per second=12)</string>
+    <string name="setfiltervalue">Set Filter Value</string>
+    <string name="Themes">Themes</string>
+    <string name="default_theme">Default</string>
+    <string name="officeblue_theme">Office Blue</string>
+    <string name="officegray_theme">Office Gray</string>
+    <string name="officeblack_theme">Office Black</string>
+    <string name="androidgray_theme">Dark Gray</string>
+    <string name="applegray_theme">Light Gray</string>
+    <string name="appleivory_theme">Ivory</string>
+    <string name="greencolorful_theme">Green Colorful</string>
+    <string name="pinkcolorful_theme">Pink Colorful</string>
+    <string name="itunest_theme">Itunes</string>
+    <string name="ios7_theme">Minimal</string>
+
+    <!-- Level Renderer -->
+    <string name="invoice_number">Invoice Number:</string>
+    <string name="invoice_date">Invoice Date:</string>
+    <string name="due_date">Due Date:</string>
+    <string name="deal_amount">Deal Amount:</string>
+    <string name="deal_description">Deal Description:</string>
+    <string name="deal_status">Deal Status:</string>
+    <string name="clientname">Client Name:</string>
+    <string name="address">Address:</string>
+
+    <!-- Level Renderer2 -->
+    <string name="organization_name">Organization Name:</string>
+    <string name="sales_contact">Sales Contact:</string>
+    <string name="sales_contact_phone">Sales Contact Phone:</string>
+    <string name="annual_revenue">Annual Revenue:</string>
+    <string name="eps">EPS:</string>
+    <string name="last_stock_price">Last stock price:</string>
+    <string name="employees">Employees:</string>
+</resources>

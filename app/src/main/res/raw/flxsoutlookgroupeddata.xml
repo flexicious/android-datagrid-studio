@@ -1,0 +1,31 @@
+<grid enablePrint="true"
+      enableEagerDraw="true" showSpinnerOnCreationComplete="true"
+      enablePreferencePersistence="true"
+      styleName="gridStyle"
+      enableDrillDown="true"
+      preferencePersistenceKey="outlookGroupedData" creationComplete="outlookGroupedData_CreationComplete"
+      rendererInitialized="outlookGroupedData_gridrendererInitializedHandler"
+      beforePrint="outlookGroupedData_gridbeforePrintHandler"
+      enableExport="true" enableCopy="true">
+    <level enablePaging="true" pageSize="20" childrenField="deals" selectedKeyField="id" horizontalGridLineThickness="2"
+           headerPaddingTop="5" reusePreviousLevelColumns="true" 
+           rowTextColorFunction="outlookGroupedData_getBlueColor" enableFilters="true" initialSortField="legalName">
+        <columns>
+            <column dataField="legalName" headerText="Organization Name" filterControl="TextInput"
+                    filterOperation="BeginsWith"/>
+            <column dataField="dealDescription" headerText="Deal Description"/>
+            <column dataField="dealStatus.name" headerText="Deal Status" footerLabel="Count:" footerOperation="count"
+                    footerAlign="center"/>
+            <column dataField="dealAmount" headerText="Amount" textAlign="right" footerLabel="Total:"
+                    footerOperation="sum" footerAlign="right" footerOperationPrecision="2"
+                    footerFormatter="getCurrencyFormatter" labelFunction="outlookGroupedData_getInvoiceAmount"
+                    sortCompareFunction="outlookGroupedDat_amountSortCompareFunction"/>
+            <column dataField="dealDate" headerText="Deal Date" labelFunction="dataGridFormatDateLabelFunction"/>
+        </columns>
+        <nextLevel>
+            <level selectedKeyField="id" reusePreviousLevelColumns="true" 
+                   horizontalGridLineColor="0xEDEDED"  horizontalGridLineThickness="1"
+                   paddingTop="2" enableFooters="true" initialSortField="dealDate" initialSortAscending="false"/>
+        </nextLevel>
+    </level>
+</grid>

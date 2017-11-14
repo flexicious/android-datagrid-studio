@@ -1,0 +1,41 @@
+<grid enablePrint="true" horizontalGridLines="true"
+      enablePreferencePersistence="true" enableFilters="true" enableDefaultDisclosureIcon="false"
+      enableExport="true" enableCopy="true" enableEagerDraw="true" showSpinnerOnFilterPageSort="true"
+      showSpinnerOnCreationComplete="true"
+      preferencePersistenceKey="groupedData2" creationComplete="groupedData2_CreationComplete" nestIndent="5">
+    <level enableFilters="true" enablePaging="true" pageSize="20" childrenField="deals" selectedKeyField="id"
+           nestIndent="5"
+           reusePreviousLevelColumns="true" rowSelectableFunction="groupedData2_returnFalse">
+        <columns>
+            <column type="checkbox"
+                    enableLabelAndCheckBox="true"  enableHierarchicalNestIndent="true"
+                    dataField="name" headerText="Name" width="250" enableExpandCollapseIcon="true" paddingTop="10"
+                    paddingLeft="35"
+                    />
+            <column dataField="invoiceAmount" headerText="Amount" textAlign="right"
+                    footerLabel="Total:" footerOperation="sum" footerAlign="right"
+                    footerOperationPrecision="2" footerFormatter="getCurrencyFormatter"
+                    labelFunction="groupedData2_getInvoiceAmount"
+                    sortCompareFunction="groupedData2_amountSortCompareFunction"/>
+
+            <column dataField="invoiceStatus.name" headerText="Invoice Status" filterControl="MultiSelectComboBox"
+                    filterComboBoxDataProvider="executeMethodOnDelegate__getInvoiceStatuses"
+                    enableRecursiveSearch="true"
+                    filterComboBoxDataField="code" filterComboBoxLabelField="name"/>
+            <column dataField="invoiceDate" headerText="Invoice Date" filterControl="DateComboBox"
+                    labelFunction="dataGridFormatDateLabelFunction"/>
+            <column dataField="dueDate" headerText="Due Date" filterControl="DateComboBox"
+                    labelFunction="dataGridFormatDateLabelFunction"/>
+        </columns>
+        <nextLevel>
+            <level childrenField="invoices" selectedKeyField="id" reusePreviousLevelColumns="true"
+                   nestIndent="5" rowSelectableFunction="groupedData2_returnFalse">
+                <nextLevel>
+                    <level enableFooters="true" enablePaging="true" pageSize="5" selectedKeyField="id"
+                           nestIndent="5" reusePreviousLevelColumns="true">
+                    </level>
+                </nextLevel>
+            </level>
+        </nextLevel>
+    </level>
+</grid>

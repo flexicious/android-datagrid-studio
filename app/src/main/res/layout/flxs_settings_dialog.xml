@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="600dp"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/settings_titletextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="200dp" >
+
+            <com.flexicious.controls.MultiSpinner
+                android:id="@+id/settings_multispinner"
+                android:layout_width="300dp"
+                android:layout_height="50dp" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:gravity="top"
+                android:orientation="vertical" >
+
+                <CheckBox
+                    android:id="@+id/settings_showfooters_cb"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:layout_margin="3dp" />
+
+                <CheckBox
+                    android:id="@+id/settings_showfilter_cb"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:layout_margin="3dp" />
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="50dp"
+                    android:layout_margin="10dp"
+                    android:gravity="left|center" >
+
+                    <TextView
+                        android:id="@+id/settings_recordsperpage_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:gravity="center" />
+
+                    <EditText
+                        android:id="@+id/settings_recordsperpage_edittext"
+                        android:layout_width="60dp"
+                        android:layout_height="fill_parent"
+                        android:inputType="number" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="60dp"
+            android:gravity="right|center" >
+
+            <Button
+                android:id="@+id/settings_apply_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent" />
+
+            <Button
+                android:id="@+id/settings_cancel_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent" />
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>

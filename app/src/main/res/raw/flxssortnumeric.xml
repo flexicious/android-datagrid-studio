@@ -1,0 +1,7 @@
+<grid >
+    <columns>
+        <column dataField="label"/>
+        <column dataField="state"/>
+        <column dataField="rank" sortNumeric="true"/>
+    </columns>
+</grid>

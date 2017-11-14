@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:layout_margin="5dp" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:gravity="center|left"
+            android:text="@string/organization_name" />
+
+        <TextView
+            android:id="@+id/lr2_organizationname_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="5dp"
+            android:gravity="center|left"
+            android:text="3M co" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="15dp"
+            android:gravity="center|left"
+            android:text="@string/sales_contact" />
+
+        <TextView
+            android:id="@+id/lr2_salescontact_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="5dp"
+            android:gravity="center|left"
+            android:text="FAY" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="15dp"
+            android:gravity="center|left"
+            android:text="@string/sales_contact_phone" />
+
+        <TextView
+            android:id="@+id/lr2_salescontactphone_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="5dp"
+            android:gravity="center|left"
+            android:text="123466789" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:layout_margin="5dp" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:gravity="center|left"
+            android:text="@string/annual_revenue" />
+
+        <TextView
+            android:id="@+id/lr2_annualrevenue_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="5dp"
+            android:gravity="center|left"
+            android:text="123456" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="15dp"
+            android:gravity="center|left"
+            android:text="@string/eps" />
+
+        <TextView
+            android:id="@+id/lr2_eps_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="5dp"
+            android:gravity="center|left"
+            android:text="3.00" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="15dp"
+            android:gravity="center|left"
+            android:text="@string/last_stock_price" />
+
+        <TextView
+            android:id="@+id/lr2_laststockprice_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="5dp"
+            android:gravity="center|left"
+            android:text="25.00" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:layout_margin="5dp" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:gravity="center|left"
+            android:text="@string/employees" />
+
+        <TextView
+            android:id="@+id/lr2_employees_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="5dp"
+            android:gravity="center|left"
+            android:text="Abbott Laboraties" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="15dp"
+            android:gravity="center|left"
+            android:text="@string/address" />
+
+        <TextView
+            android:id="@+id/lr2_address_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="5dp"
+            android:gravity="center|left"
+            android:text="test" />
+    </LinearLayout>
+
+</LinearLayout>

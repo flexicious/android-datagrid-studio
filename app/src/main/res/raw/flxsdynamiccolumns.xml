@@ -1,0 +1,7 @@
+<grid horizontalScrollPolicy="on" enablePrint="true"
+      enablePreferencePersistence="true" generateColumns="false"
+      enableExport="true" enableCopy="true" enableFilters="true" enableFooters="true" enablePaging="true"
+      preferencePersistenceKey="dynamicColumns"
+      creationComplete="DynamicColumns_grid_creationCompleteHandler">
+
+</grid>

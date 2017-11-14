@@ -1,0 +1,28 @@
+<grid color="0x323232"
+      preferencePersistenceKey="multipleGrouping_Manual" creationComplete="multipleGrouping_Manual_CreationComplete">
+    <level childrenField="children" enableFooters="true">
+        <columns>
+            <column dataField="Region" enableHierarchicalNestIndent="true"/>
+            <column dataField="RegionCode"/>
+        </columns>
+
+        <nextLevel>
+            <level enableFooters="true" childrenField="children">
+                <columns>
+                    <column dataField="Territory"/>
+                    <column dataField="TerritoryCode"/>
+
+                </columns>
+                <nextLevel>
+                    <level enableFooters="true" childrenCountField="numChildren">
+                        <columns>
+                            <column dataField="Territory_Rep" headerText="Territory Rep"/>
+                            <column dataField="Actual"/>
+                            <column dataField="Estimate"/>
+                        </columns>
+                    </level>
+                </nextLevel>
+            </level>
+        </nextLevel>
+    </level>
+</grid>

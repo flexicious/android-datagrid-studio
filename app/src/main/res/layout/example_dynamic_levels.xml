@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal"
+        android:layout_margin="5dp">
+        <Button 
+            android:id="@+id/dynamiclevels_selectBJTS"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:text="@string/selectbj_ts"/>
+    </LinearLayout>
+    <com.flexicious.nestedtreedatagrid.FlexDataGrid
+        android:id="@+id/flexDataGrid1"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+    </com.flexicious.nestedtreedatagrid.FlexDataGrid>
+
+</LinearLayout>

@@ -1,0 +1,35 @@
+<grid selectedKeyField="Id" filterPageSortMode="server" showSpinnerOnFilterPageSort="true"
+      filterPageSortChange="virtualScrollTest_filterPageSortChangeHandler"
+      enableVirtualScroll="true"
+      initialSortField="Id" virtualScroll="virtualScrollTest_virtualScrollHandler"
+      scroll="virtualScrollTest_scrollHandler"
+      enableSelectionCascade="true"
+      enableSelectionBubble="true"
+      
+      enableTriStateCheckbox="true"
+      clearSelectionOnDataProviderChange="false"
+      itemClick="virtualScrollTest_itemClickHandler"
+      preferencePersistenceKey="virtualScrollTest" creationComplete="virtualScrollTest_onCreationComplete">
+    <level childrenCountField="numChildren" itemLoadMode="server" enableFooters="true" selectedKeyField="Id">
+        <columns>
+            <column type="checkbox"/>
+            <column dataField="Id" enableHierarchicalNestIndent="true"/>
+            <column dataField="Name"/>
+            <column dataField="Street"/>
+            <column dataField="Title"/>
+            <column dataField="City"/>
+        </columns>
+        <nextLevel>
+            <level enableFooters="true" selectedKeyField="Id">
+                <columns>
+                    <column type="checkbox"/>
+                    <column dataField="Id" enableHierarchicalNestIndent="true"/>
+                    <column dataField="Name"/>
+                    <column dataField="Street"/>
+                    <column dataField="Title"/>
+                    <column dataField="City"/>
+                </columns>
+            </level>
+        </nextLevel>
+    </level>
+</grid>

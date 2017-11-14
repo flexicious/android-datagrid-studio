@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RadioGroup android:id="@+id/selectiongruop"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:orientation="horizontal">
+        <RadioButton android:id="@+id/selectionmode_singlecell"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:text="@string/singlecell"/>
+        <RadioButton android:id="@+id/selectionmode_multiplecell"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:text="@string/multiplecell"/>
+        <RadioButton android:id="@+id/selectionmode_singlerow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:text="@string/singlerow"/>
+        <RadioButton android:id="@+id/selectionmode_multiplerow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:text="@string/multiplerow"/>
+        <RadioButton android:id="@+id/selectionmode_none"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:text="@string/none"
+            android:checked="true"/>
+    </RadioGroup>
+    <com.flexicious.nestedtreedatagrid.FlexDataGrid
+        android:id="@+id/flexDataGrid1"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+    </com.flexicious.nestedtreedatagrid.FlexDataGrid>
+
+</LinearLayout>
