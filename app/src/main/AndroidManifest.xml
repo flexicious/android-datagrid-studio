@@ -82,8 +82,9 @@
         </activity>
         <activity
             android:name="com.flexicious.screens.SettingsActivity"
+            android:theme="@android:style/Theme.Material.Dialog"
             android:windowSoftInputMode="stateHidden"
-            android:theme="@android:style/Theme.Dialog">
+            tools:ignore="NewApi">
         </activity>
         <activity
             android:name="com.flexicious.screens.SortActivity"
