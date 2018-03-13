@@ -72,13 +72,15 @@
 
         <activity
             android:name="com.flexicious.screens.ExportActivity"
+            android:theme="@android:style/Theme.Material.Dialog"
             android:windowSoftInputMode="stateHidden"
-            android:theme="@android:style/Theme.Dialog">
+            tools:ignore="NewApi">
         </activity>
         <activity
             android:name="com.flexicious.screens.SaveSettingsActivity"
+            android:theme="@android:style/Theme.Material.Dialog"
             android:windowSoftInputMode="stateHidden"
-            android:theme="@android:style/Theme.Dialog">
+            tools:ignore="NewApi">
         </activity>
         <activity
             android:name="com.flexicious.screens.SettingsActivity"
@@ -88,14 +90,16 @@
         </activity>
         <activity
             android:name="com.flexicious.screens.SortActivity"
+            android:theme="@android:style/Theme.Material.Dialog"
             android:windowSoftInputMode="stateHidden"
-            android:theme="@android:style/Theme.Dialog">
+            tools:ignore="NewApi">
         </activity>
 
         <activity
             android:name="com.flexicious.screens.DatePickerActivity"
-            android:theme="@android:style/Theme.Dialog"
-            android:windowSoftInputMode="stateHidden" >
+            android:theme="@android:style/Theme.Material.Dialog"
+            android:windowSoftInputMode="stateHidden"
+            tools:ignore="NewApi">
         </activity>
     </application>
 
